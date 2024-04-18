@@ -1,4 +1,5 @@
 # Meta-llama3
+## Adapter for single-GPU
 Llama3 model definition comes configured for multi-GPU. Although you should be able to set the configuration to run it in a single GPU with no code changes, this version simplifies the model's definition to adapt it to a single-GPU environment.
 
 ### Generation
