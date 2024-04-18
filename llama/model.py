@@ -1,18 +1,14 @@
 # Copyright (c) Meta Platforms, Inc. and affiliates.
 # This software may be used and distributed in accordance with the terms of the Llama 3 Community License Agreement.
 
+# Updated by Juan Olano 4/18/2024 
+# Simplified the code to adapt it for a single GPU. (https://github.com/jcolano/llama3_single_gpu.git)
+
 import math
 from dataclasses import dataclass
 from typing import Optional, Tuple
-
-# import fairscale.nn.model_parallel.initialize as fs_init
 import torch
 import torch.nn.functional as F
-# from fairscale.nn.model_parallel.layers import (
-#     ColumnParallelLinear,
-#     RowParallelLinear,
-#     VocabParallelEmbedding,
-# )
 from torch import nn
 
 
